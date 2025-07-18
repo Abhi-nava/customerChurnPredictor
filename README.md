@@ -95,6 +95,17 @@ The model architecture consists of:
    python train_model.py
    ```
 
+5. Run the applications:
+   - To run first CD into src then:
+   - For the churn predictor, run:
+     ```bash
+     python src/app.py
+     ```
+   - For the salary predictor, run:
+     ```bash
+     python src/streamlit_app.py
+     ```
+
 ---
 
 ## Usage
