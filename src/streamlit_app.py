@@ -6,15 +6,15 @@ import pandas as pd
 import pickle
 
 # Load the model and preprocessing objects
-model = tf.keras.models.load_model('../models/regression_model.h5')
+model = tf.keras.models.load_model('../models/salaryPredictor/regression_model.h5')
 
-with open('../models/label_encoder_gender.pkl', 'rb') as file:
+with open('../models/salaryPredictor/label_encoder_gender.pkl', 'rb') as file:
     label_encoder_gender = pickle.load(file)
 
-with open('../models/onehot_encoder_geo.pkl', 'rb') as file:
+with open('../models/salaryPredictor/onehot_encoder_geo.pkl', 'rb') as file:
     onehot_encoder_geo = pickle.load(file)
 
-with open('../models/scaler.pkl', 'rb') as file:
+with open('../models/salaryPredictor/scaler.pkl', 'rb') as file:
     scaler = pickle.load(file)
 
 st.title('Salary Prediction')
